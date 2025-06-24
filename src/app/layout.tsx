@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import "./globals.css";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const viewport = {
   width: 'device-width',
@@ -7,31 +10,36 @@ export const viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Jeani - The Future of Movement Starts Here",
-  description: "Jeani helps athletes stay injury-free by understanding their joints in motion. Revolutionary wearable technology for movement monitoring and performance optimization.",
+  metadataBase: new URL('https://jeanihealth.com'),
+  title: "Jeani",
+  description: "The future of movement starts here.",
+  icons: {
+    icon: '/Jeani-Logo-08_04_25-2.png',
+  },
   keywords: "wearable technology, movement monitoring, sports analytics, movement analysis, biomechanics, AI, athlete performance",
   authors: [{ name: "Jeani Team" }],
   robots: "index, follow",
   openGraph: {
-    title: "Jeani - The Future of Movement Starts Here",
-    description: "Revolutionary wearable technology that helps athletes stay injury-free through intelligent movement analysis.",
-    type: "website",
-    url: "https://jeani.ai",
-    siteName: "Jeani",
+    title: 'Jeani',
+    description: 'The future of movement starts here.',
+    url: '/',
+    siteName: 'Jeani',
     images: [
       {
-        url: "/og-image.jpg",
+        url: '/jeanimockup.png',
         width: 1200,
         height: 630,
-        alt: "Jeani - Wearable AI for Athletes",
+        alt: 'The Jeani movement monitoring device',
       },
     ],
+    locale: 'en_US',
+    type: 'website',
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Jeani - The Future of Movement Starts Here",
-    description: "Revolutionary wearable technology that helps athletes stay injury-free through intelligent movement analysis.",
-    images: ["/og-image.jpg"],
+    card: 'summary_large_image',
+    title: 'Jeani',
+    description: 'The future of movement starts here.',
+    images: ['/jeanimockup.png'],
   },
 };
 
