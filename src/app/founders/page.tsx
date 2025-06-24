@@ -31,7 +31,7 @@ export default function Founders() {
             <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-8 shadow-2xl shadow-white/10 flex flex-col items-center">
               <div className="w-32 h-32 rounded-full overflow-hidden mb-6 border-2 border-cyan-400/50">
                 <Image 
-                  src="/TAHgW0QnWzGPhoYQksWo4E91CKs copy.png" 
+                  src="/ewan-bradley.png" 
                   alt="Ewan Bradley" 
                   width={128}
                   height={128}
@@ -62,7 +62,7 @@ export default function Founders() {
             <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-8 shadow-2xl shadow-white/10 flex flex-col items-center">
               <div className="w-32 h-32 rounded-full overflow-hidden mb-6 border-2 border-cyan-400/50">
                 <Image
-                  src="/crop-1 copy.png" 
+                  src="/stuart-bladon.png" 
                   alt="Stuart Bladon" 
                   width={128}
                   height={128}
@@ -93,7 +93,7 @@ export default function Founders() {
             <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-8 shadow-2xl shadow-white/10 flex flex-col items-center">
               <div className="w-32 h-32 rounded-full overflow-hidden mb-6 border-2 border-cyan-400/50">
                 <Image 
-                  src="/PEFJPu8KgyMzWUqChBJMDFFJPxk copy.png" 
+                  src="/michael-bennett.png" 
                   alt="Michael Bennett" 
                   width={128}
                   height={128}
