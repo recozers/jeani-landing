@@ -12,7 +12,7 @@ export const viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://jeanihealth.com'),
   title: "Jeani",
-  description: "The future of movement starts here.",
+  description: "the future of movement health",
   icons: {
     icon: '/Jeani-Logo-08_04_25-2.png',
   },
@@ -21,15 +21,15 @@ export const metadata: Metadata = {
   robots: "index, follow",
   openGraph: {
     title: 'Jeani',
-    description: 'The future of movement starts here.',
+    description: 'the future of movement health',
     url: '/',
     siteName: 'Jeani',
     images: [
       {
-        url: '/jeanimockup.png',
+        url: '/Jeani-Logo-08_04_25-2.png',
         width: 1200,
-        height: 630,
-        alt: 'The Jeani movement monitoring device',
+        height: 450,
+        alt: 'Jeani Logo',
       },
     ],
     locale: 'en_US',
@@ -38,8 +38,8 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Jeani',
-    description: 'The future of movement starts here.',
-    images: ['/jeanimockup.png'],
+    description: 'the future of movement health',
+    images: ['/Jeani-Logo-08_04_25-2.png'],
   },
 };
 
