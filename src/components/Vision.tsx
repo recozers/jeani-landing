@@ -70,7 +70,7 @@ const Vision = () => {
               </svg>
             </div>
             <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3">Find Your Peak</h3>
-            <p className="text-sm md:text-base text-gray-600">Optimize for performance that matters to you, whether that's speed, endurance, power, or simply moving pain-free.</p>
+            <p className="text-sm md:text-base text-gray-600">Optimize for performance that matters to you, whether that&apos;s speed, endurance, power, or simply moving pain-free.</p>
           </div>
         </motion.div>
       </div>

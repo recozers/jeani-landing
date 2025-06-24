@@ -79,7 +79,7 @@ export default function Mission() {
               <div className="text-center md:text-left">
                 <h3 className="text-3xl font-bold text-white mb-4">Extend Athletic Longevity</h3>
                 <p className="text-lg text-gray-300 leading-relaxed">
-                  Every athlete's career should be limited by passion, not by preventable injuries. Our technology helps athletes train smarter, recover better, and compete longer by providing real-time insights into movement patterns and load management.
+                  Every athlete&apos;s career should be limited by passion, not by preventable injuries. Our technology helps athletes train smarter, recover better, and compete longer by providing real-time insights into movement patterns and load management.
                 </p>
               </div>
             </div>

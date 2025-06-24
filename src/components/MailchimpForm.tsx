@@ -127,7 +127,11 @@ const MailchimpForm = ({ isOpen, onClose }: MailchimpFormProps) => {
               </div>
             </motion.div>
             <h2 className="text-3xl font-bold text-white mb-2">Thank You!</h2>
-            <p className="text-white/80">You're on the list. We'll be in touch soon.</p>
+            <p className="text-white/80">You&apos;re on the list. We&apos;ll be in touch soon.</p>
+            <p className="text-sm text-gray-500 mt-4">
+              We respect your privacy and will never share your email. 
+              You&apos;re signing up for the official Jeani newsletter, not a third-party service.
+            </p>
           </div>
         )}
       </motion.div>
