@@ -1,5 +1,6 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import Image from 'next/image';
 
 export default function Founders() {
   return (
@@ -27,11 +28,13 @@ export default function Founders() {
 
           {/* Founder Cards */}
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-8 shadow-2xl shadow-white/10">
-              <div className="w-24 h-24 rounded-full mx-auto mb-6 overflow-hidden border-2 border-cyan-400">
-                <img 
+            <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-8 shadow-2xl shadow-white/10 flex flex-col items-center">
+              <div className="w-32 h-32 rounded-full overflow-hidden mb-6 border-2 border-cyan-400/50">
+                <Image 
                   src="/TAHgW0QnWzGPhoYQksWo4E91CKs copy.png" 
                   alt="Ewan Bradley" 
+                  width={128}
+                  height={128}
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -56,11 +59,13 @@ export default function Founders() {
               </div>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-8 shadow-2xl shadow-white/10">
-              <div className="w-24 h-24 rounded-full mx-auto mb-6 overflow-hidden border-2 border-cyan-400">
-                <img 
+            <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-8 shadow-2xl shadow-white/10 flex flex-col items-center">
+              <div className="w-32 h-32 rounded-full overflow-hidden mb-6 border-2 border-cyan-400/50">
+                <Image
                   src="/crop-1 copy.png" 
                   alt="Stuart Bladon" 
+                  width={128}
+                  height={128}
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -85,11 +90,13 @@ export default function Founders() {
               </div>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-8 shadow-2xl shadow-white/10">
-              <div className="w-24 h-24 rounded-full mx-auto mb-6 overflow-hidden border-2 border-cyan-400">
-                <img 
+            <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-8 shadow-2xl shadow-white/10 flex flex-col items-center">
+              <div className="w-32 h-32 rounded-full overflow-hidden mb-6 border-2 border-cyan-400/50">
+                <Image 
                   src="/PEFJPu8KgyMzWUqChBJMDFFJPxk copy.png" 
                   alt="Michael Bennett" 
+                  width={128}
+                  height={128}
                   className="w-full h-full object-cover"
                 />
               </div>

@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -57,10 +58,12 @@ const Navigation = () => {
 
               {/* Logo */}
               <div className="text-center mb-8">
-                <img 
+                <Image 
                   src="/Jeani-Logo-08_04_25.png" 
                   alt="Jeani" 
-                  className="h-12 mx-auto"
+                  width={120}
+                  height={45}
+                  className="h-12 w-auto mx-auto"
                 />
               </div>
 

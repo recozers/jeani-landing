@@ -1,5 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const Product = () => {
   const features = [
@@ -72,9 +73,11 @@ const Product = () => {
             className="relative"
           >
             <div className="aspect-square bg-gradient-to-br from-cyan-100 to-blue-100 rounded-3xl flex items-center justify-center shadow-2xl p-6 md:p-8">
-              <img 
+              <Image 
                 src="/jeanimockup.png" 
                 alt="Jeani Device Mockup" 
+                width={500}
+                height={500}
                 className="max-w-full max-h-full object-contain"
               />
             </div>

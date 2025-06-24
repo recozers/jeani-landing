@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import MailchimpForm from './MailchimpForm';
+import Image from 'next/image';
 
 const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -32,10 +33,13 @@ const Hero = () => {
               <div className="w-[300px] h-[150px] sm:w-[400px] sm:h-[200px] md:w-[504px] md:h-[242px] bg-white/5 backdrop-blur-xl border border-white/20 shadow-2xl shadow-white/10 rounded-full animate-pulse" style={{animationDuration: '4s'}}></div>
             </div>
             
-            <img 
+            <Image 
               src="/Jeani-Logo-08_04_25.png" 
               alt="Jeani Logo" 
-              className="h-28 sm:h-36 md:h-44 lg:h-52 relative z-10"
+              width={400}
+              height={150}
+              priority={true}
+              className="h-28 sm:h-36 md:h-44 lg:h-52 w-auto relative z-10"
             />
           </motion.div>
           

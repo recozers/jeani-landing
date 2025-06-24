@@ -1,5 +1,6 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import Image from 'next/image';
 
 export default function Mission() {
   return (
@@ -28,11 +29,13 @@ export default function Mission() {
           <div className="space-y-16 md:space-y-24">
             {/* Pillar 1: Our Why */}
             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-              <div className="md:order-last">
-                <img 
+              <div className="md:order-last relative w-full h-80 md:h-96">
+                <Image 
                   src="/e51MIufQ7ke1bD7G6WKx1CoHMQ.jpg.webp" 
                   alt="Athletes in action"
-                  className="w-full h-80 md:h-96 object-cover rounded-2xl shadow-lg"
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-2xl shadow-lg"
                 />
               </div>
               <div className="text-center md:text-left">
@@ -45,11 +48,13 @@ export default function Mission() {
 
             {/* Pillar 2: Make the Invisible Visible */}
             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-              <div>
-                <img 
+              <div className="relative w-full h-80 md:h-96">
+                <Image 
                   src="/9TsoF721FF5YZubwZ5zr6wmtaAw.jpg" 
                   alt="Making the invisible visible"
-                  className="w-full h-80 md:h-96 object-cover rounded-2xl shadow-lg"
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-2xl shadow-lg"
                 />
               </div>
               <div className="text-center md:text-left">
@@ -62,11 +67,13 @@ export default function Mission() {
 
             {/* Pillar 3: Extend Athletic Longevity */}
             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-              <div className="md:order-last">
-                <img 
+              <div className="md:order-last relative w-full h-80 md:h-96">
+                <Image 
                   src="/uzoy5BnHIfCRVJeMviEySMMCx9U.jpg" 
                   alt="Extending athletic longevity"
-                  className="w-full h-80 md:h-96 object-cover rounded-2xl shadow-lg"
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-2xl shadow-lg"
                 />
               </div>
               <div className="text-center md:text-left">
