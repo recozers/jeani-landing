@@ -13,10 +13,10 @@ export default function Founders() {
           <div className="text-center mb-16">
             <div className="relative inline-block">
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-full max-w-[370px] md:max-w-none md:w-[850px] h-[180px] md:h-[240px] bg-white/5 backdrop-blur-xl border border-white/20 shadow-2xl shadow-white/10 rounded-full animate-pulse" style={{animationDuration: '4s'}}></div>
+                <div className="w-full max-w-[420px] sm:max-w-[480px] md:max-w-none md:w-[850px] h-[190px] sm:h-[200px] md:h-[240px] bg-white/5 backdrop-blur-xl border border-white/20 shadow-2xl shadow-white/10 rounded-full animate-pulse" style={{animationDuration: '4s'}}></div>
               </div>
-              <div className="relative z-10 px-6 md:px-8 py-6 md:py-10">
-                <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
+              <div className="relative z-10 px-4 sm:px-6 md:px-8 py-6 md:py-10">
+                <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
                   About the <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">Founders</span>
                 </h1>
                 <p className="text-base md:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed mt-3 md:mt-4">
