@@ -27,7 +27,7 @@ export default function InvisibleForces() {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {/* Podcast 1 - Spotify Embed */}
             <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-8 shadow-2xl shadow-white/10">
               <iframe 
@@ -48,6 +48,21 @@ export default function InvisibleForces() {
               <iframe 
                 style={{borderRadius: '12px'}} 
                 src="https://open.spotify.com/embed/episode/110qYX7Ccvx6VX65aIy97Q?utm_source=generator" 
+                width="100%" 
+                height="352" 
+                frameBorder="0" 
+                allowFullScreen 
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                loading="lazy"
+                className="mb-4"
+              />
+            </div>
+
+            {/* Podcast 3 - Spotify Embed */}
+            <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-8 shadow-2xl shadow-white/10">
+              <iframe 
+                style={{borderRadius: '12px'}} 
+                src="https://open.spotify.com/embed/episode/7lbXlpfJEEZDcJTx7Cuqvz?utm_source=generator" 
                 width="100%" 
                 height="352" 
                 frameBorder="0" 
