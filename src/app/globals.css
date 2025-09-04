@@ -3,33 +3,35 @@
 
 /* Custom color definitions for Tailwind v4 */
 @theme {
-  --color-cyan-50: #ecfeff;
-  --color-cyan-100: #cffafe;
-  --color-cyan-200: #a5f3fc;
-  --color-cyan-300: #67e8f9;
-  --color-cyan-400: #22d3ee;
-  --color-cyan-500: #06b6d4;
-  --color-cyan-600: #0891b2;
-  --color-cyan-700: #0e7490;
-  --color-cyan-800: #155e75;
-  --color-cyan-900: #164e63;
-  
-  --color-blue-50: #eff6ff;
-  --color-blue-100: #dbeafe;
-  --color-blue-200: #bfdbfe;
-  --color-blue-300: #93c5fd;
-  --color-blue-400: #60a5fa;
-  --color-blue-500: #3b82f6;
-  --color-blue-600: #2563eb;
-  --color-blue-700: #1d4ed8;
-  --color-blue-800: #1e40af;
-  --color-blue-900: #1e3a8a;
+  /* Accent: warm cream → soft gold */
+  --color-cyan-50: #fff8eb;
+  --color-cyan-100: #fef2db;
+  --color-cyan-200: #fde7c0;
+  --color-cyan-300: #f7d89e;
+  --color-cyan-400: #efc774;
+  --color-cyan-500: #e3b552;
+  --color-cyan-600: #c99b3f;
+  --color-cyan-700: #a97d31;
+  --color-cyan-800: #876327;
+  --color-cyan-900: #6e4f20;
+
+  /* Primary: indigo-navy spectrum */
+  --color-blue-50: #f3f4fb;
+  --color-blue-100: #e7eaf6;
+  --color-blue-200: #d1d8f0;
+  --color-blue-300: #aebde6;
+  --color-blue-400: #8096d4;
+  --color-blue-500: #5b75c2;
+  --color-blue-600: #4059a8;
+  --color-blue-700: #2f458a;
+  --color-blue-800: #23346d;
+  --color-blue-900: #1a2652;
 }
 
 /* Base styles */
 @layer base {
   body {
-    @apply bg-gradient-to-br from-cyan-50 to-blue-50 text-gray-900 font-sans;
+    @apply bg-gradient-to-br from-cyan-50 to-blue-50 text-slate-900 font-sans;
   }
   
   html {

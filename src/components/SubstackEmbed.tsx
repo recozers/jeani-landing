@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const SubstackEmbed = () => {
   return (
-    <section className="py-24 bg-navy px-6">
+    <section className="py-24 bg-gradient-to-br from-blue-950 to-blue-900 px-6">
       <div className="max-w-4xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -11,8 +11,8 @@ const SubstackEmbed = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">From the Lab</h2>
-          <p className="text-gray-300">The latest insights from our research and development.</p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-cyan-50 mb-4">From the Lab</h2>
+          <p className="text-blue-100/80">The latest insights from our research and development.</p>
         </motion.div>
         
         <motion.div
@@ -22,7 +22,7 @@ const SubstackEmbed = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-16"
         >
-          <div className="bg-navy-light p-8 rounded-lg">
+          <div className="bg-blue-900/50 p-8 rounded-lg border border-blue-400/20">
             <iframe 
               src="https://jeani.substack.com/embed" 
               width="100%" 
