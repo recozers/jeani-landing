@@ -2,7 +2,6 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import MailchimpForm from './MailchimpForm';
-import Image from 'next/image';
 
 const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
