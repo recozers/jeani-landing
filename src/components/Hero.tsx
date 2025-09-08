@@ -25,12 +25,9 @@ const Hero = () => {
             className="mb-8 relative w-full flex justify-center"
           >
             
-            <Image 
+            <img 
               src="/Jeani_png.png" 
               alt="Jeani Logo" 
-              width={400}
-              height={150}
-              priority={true}
               className="h-28 sm:h-36 md:h-44 lg:h-52 w-auto relative z-10"
             />
           </motion.div>
