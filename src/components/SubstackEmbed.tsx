@@ -11,7 +11,7 @@ const SubstackEmbed = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-cyan-50 mb-4">From the Lab</h2>
+          <h2 className="text-3xl sm:text-4xl text-cyan-50 mb-4">From the Lab</h2>
           <p className="text-blue-100/80">The latest insights from our research and development.</p>
         </motion.div>
         

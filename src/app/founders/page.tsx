@@ -4,11 +4,21 @@ import Image from 'next/image';
 
 export default function Founders() {
   return (
-    <main>
+    <main 
+      className="mobile-bg-override"
+      style={{ 
+        backgroundImage: "url('/BG-2.png')", 
+        backgroundSize: 'cover', 
+        backgroundPosition: 'center', 
+        backgroundRepeat: 'no-repeat', 
+        backgroundAttachment: 'fixed',
+        minHeight: '100vh'
+      }}
+    >
       <Navigation />
       
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 px-6">
+      <section className="py-16 md:py-24 px-6 max-md:min-h-[100vh] max-md:flex max-md:flex-col max-md:justify-center">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <div className="relative inline-block">
@@ -16,7 +26,7 @@ export default function Founders() {
                 <div className="w-full max-w-[420px] sm|max-w-[480px] md:max-w-none md:w-[850px] h-[190px] sm:h-[200px] md:h-[240px] bg-blue-900/30 backdrop-blur-xl border border-blue-400/20 shadow-2xl shadow-blue-900/20 rounded-full animate-pulse" style={{animationDuration: '4s'}}></div>
               </div>
               <div className="relative z-10 px-4 sm:px-6 md:px-8 py-6 md:py-10">
-                <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-cyan-50 leading-tight">
+                <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl text-cyan-50 leading-tight">
                   About the <span className="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">Founders</span>
                 </h1>
                 <p className="text-base md:text-xl text-blue-100/80 max-w-2xl mx-auto leading-relaxed mt-3 md:mt-4">
@@ -38,8 +48,8 @@ export default function Founders() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-2xl font-bold text-cyan-50 text-center mb-2">Ewan Bradley</h3>
-              <p className="text-blue-200 text-center mb-4 font-medium">CEO</p>
+              <h3 className="text-2xl text-cyan-50 text-center mb-2">Ewan Bradley</h3>
+              <p className="text-blue-200 text-center mb-4">CEO</p>
               <p className="text-base md:text-lg text-blue-100/90 leading-relaxed text-center mb-6">
                 From Chester, United Kingdom. Studied Human Biology at Loughborough University. Currently studying a MS in Global Health with a focus on Sports Medicine Development for Athletes in low-resource settings.
               </p>
@@ -69,8 +79,8 @@ export default function Founders() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-2xl font-bold text-cyan-50 text-center mb-2">Stuart Bladon</h3>
-              <p className="text-blue-200 text-center mb-4 font-medium">CTO</p>
+              <h3 className="text-2xl text-cyan-50 text-center mb-2">Stuart Bladon</h3>
+              <p className="text-blue-200 text-center mb-4">CTO</p>
               <p className="text-base md:text-lg text-blue-100/90 leading-relaxed text-center mb-6">
                 From Newbury, United Kingdom. Studied Neuroscience and Economics at Boston University. Currently studying Artificial Intelligence engineering at Duke.
               </p>
@@ -105,8 +115,8 @@ export default function Founders() {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-2xl font-bold text-cyan-50 text-center mb-2">Michael Bennett</h3>
-              <p className="text-blue-200 text-center mb-4 font-medium">COO</p>
+              <h3 className="text-2xl text-cyan-50 text-center mb-2">Michael Bennett</h3>
+              <p className="text-blue-200 text-center mb-4">COO</p>
               <p className="text-base md:text-lg text-blue-100/90 leading-relaxed text-center mb-6">
                 Originally from Denver, Colorado. Currently studying Public Policy at Duke University. An incoming Duke Fuqua School of Business MMS candidate.
               </p>

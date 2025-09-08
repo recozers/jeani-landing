@@ -1,8 +1,23 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const hostGrotesk = localFont({
+  src: [
+    { path: "../../public/fonts/Host_Grotesk/HostGrotesk-VariableFont_wght.ttf", style: "normal" },
+    { path: "../../public/fonts/Host_Grotesk/HostGrotesk-Italic-VariableFont_wght.ttf", style: "italic" }
+  ],
+  display: "swap",
+});
+
+const crimsonPro = localFont({
+  src: [
+    { path: "../../public/fonts/Crimson_Pro/CrimsonPro-VariableFont_wght.ttf", style: "normal" },
+    { path: "../../public/fonts/Crimson_Pro/CrimsonPro-Italic-VariableFont_wght.ttf", style: "italic" }
+  ],
+  variable: "--font-crimson",
+  display: "swap",
+});
 
 export const viewport = {
   width: 'device-width',
@@ -14,7 +29,7 @@ export const metadata: Metadata = {
   title: "Jeani",
   description: "the future of movement health",
   icons: {
-    icon: '/Jeani-Logo-08_04_25-2.png',
+    icon: '/jeani_logo.png',
   },
   keywords: "wearable technology, movement monitoring, sports analytics, movement analysis, biomechanics, AI, athlete performance",
   authors: [{ name: "Jeani Team" }],
@@ -49,12 +64,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-      </head>
-      <body className={`${inter.className} bg-gradient-to-br from-blue-900 via-blue-800 to-cyan-100 text-slate-50`}>
+    <html lang="en" className={`scroll-smooth ${crimsonPro.variable}`}>
+      <head></head>
+      <body className={`${hostGrotesk.className} text-slate-50`}>
         {children}
       </body>
     </html>

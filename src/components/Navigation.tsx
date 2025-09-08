@@ -2,7 +2,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
-import Image from 'next/image';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -56,16 +55,7 @@ const Navigation = () => {
                 </svg>
               </button>
 
-              {/* Logo */}
-              <div className="text-center mb-8">
-                <Image 
-                  src="/Jeani-Logo-08_04_25.png" 
-                  alt="Jeani" 
-                  width={120}
-                  height={45}
-                  className="h-12 w-auto mx-auto"
-                />
-              </div>
+              
 
               {/* Menu Items */}
               <nav className="space-y-4 flex-1">
@@ -79,7 +69,7 @@ const Navigation = () => {
                     <Link
                       href={item.href}
                       onClick={() => setIsMenuOpen(false)}
-                      className="block text-cyan-50 text-lg font-medium py-3 px-4 rounded-xl hover:bg-blue-900/40 transition-colors"
+                      className="block text-cyan-50 text-lg py-3 px-4 rounded-xl hover:bg-blue-900/40 transition-colors"
                     >
                       {item.title}
                     </Link>

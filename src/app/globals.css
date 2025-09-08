@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;700;900&display=swap');
 @import "tailwindcss";
 
+/* Target just the root without affecting body */
+:root {
+  background-color: transparent;
+}
+
 /* Custom color definitions for Tailwind v4 */
 @theme {
   /* Accent: warm cream → soft gold */
@@ -31,16 +36,92 @@
 /* Base styles */
 @layer base {
   body {
-    @apply bg-gradient-to-br from-cyan-50 to-blue-50 text-slate-900 font-sans;
+    @apply text-slate-900 font-sans;
+    background-image: url('/BG.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  /* Mobile-specific background adjustments */
+  @media (max-width: 768px) {
+    body {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      background-image: none !important;
+      background-attachment: scroll !important;
+    }
+    
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('/bg-mobile.png');
+      background-size: 130% auto;
+      background-position: top center;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
   }
   
   html {
     scroll-behavior: smooth;
   }
+  
+  @media (max-width: 768px) {
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+/* Mobile background styles for pages with BG-2.png */
+@layer utilities {
+  @media (max-width: 768px) {
+    .mobile-bg-override {
+      background-image: none !important;
+      background-attachment: scroll !important;
+    }
+    
+    .mobile-bg-override::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('/bg-mobile.png');
+      background-size: 130% auto;
+      background-position: top center;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+    
+    .mobile-bg-override {
+      position: relative;
+      z-index: 0;
+    }
+    
+    .mobile-bg-override h3,
+    .mobile-bg-override p {
+      color: #0a2463 !important;
+    }
+    
+    .mobile-bg-override svg {
+      color: #0a2463 !important;
+    }
+  }
 }
 
 /* Iridescent/holographic effects */
 @layer utilities {
+  
   .iridescent {
     background: linear-gradient(
       45deg,

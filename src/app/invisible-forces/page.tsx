@@ -3,13 +3,23 @@ import Footer from '@/components/Footer';
 
 export default function InvisibleForces() {
   return (
-    <main>
+    <main 
+      className="mobile-bg-override"
+      style={{ 
+        backgroundImage: "url('/BG-2.png')", 
+        backgroundSize: 'cover', 
+        backgroundPosition: 'center', 
+        backgroundRepeat: 'no-repeat', 
+        backgroundAttachment: 'fixed',
+        minHeight: '100vh'
+      }}
+    >
       <Navigation />
       
 
 
       {/* Podcasts Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 px-6">
+      <section className="py-16 md:py-24 px-6 max-md:min-h-[100vh]">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <div className="relative inline-block">
@@ -17,7 +27,7 @@ export default function InvisibleForces() {
                   <div className="w-full max-w-[340px] md:max-w-none md:w-[700px] h-[180px] md:h-[240px] bg-blue-900/30 backdrop-blur-xl border border-blue-400/20 shadow-2xl shadow-blue-900/20 rounded-full animate-pulse" style={{animationDuration: '4s'}}></div>
               </div>
               <div className="relative z-10 px-6 md:px-8 py-6 md:py-10">
-                <h2 className="text-3xl md:text-5xl font-bold text-cyan-50 leading-tight">
+                <h2 className="text-3xl md:text-5xl text-cyan-50 leading-tight">
                   <span className="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">Invisible</span> Forces
                 </h2>
                 <p className="text-base md:text-xl text-blue-100/80 max-w-2xl mx-auto leading-relaxed mt-3 md:mt-4">
@@ -75,7 +85,7 @@ export default function InvisibleForces() {
           </div>
 
           <div className="text-center">
-            <h3 className="text-3xl font-bold text-cyan-50 mb-8">Articles</h3>
+            <h3 className="text-3xl text-cyan-50 mb-8">Articles</h3>
             
             {/* Featured Posts */}
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
@@ -87,7 +97,7 @@ export default function InvisibleForces() {
                 className="bg-white/10 backdrop-blur-xl border border-blue-400/20 rounded-3xl p-6 shadow-2xl shadow-blue-900/20 hover:bg-blue-900/20 transition-all duration-300 block"
               >
 
-                <h4 className="text-lg font-bold text-cyan-50 mb-2">Movement as Music</h4>
+                <h4 className="text-lg text-cyan-50 mb-2">Movement as Music</h4>
                 <p className="text-blue-100/80 text-sm mb-3">
                   Exploring the rhythm and harmony of human movement through the lens of musical composition.
                 </p>
@@ -102,7 +112,7 @@ export default function InvisibleForces() {
                 className="bg-white/10 backdrop-blur-xl border border-blue-400/20 rounded-3xl p-6 shadow-2xl shadow-blue-900/20 hover:bg-blue-900/20 transition-all duration-300 block"
               >
 
-                <h4 className="text-lg font-bold text-cyan-50 mb-2">The Pebble in the Shoe</h4>
+                <h4 className="text-lg text-cyan-50 mb-2">The Pebble in the Shoe</h4>
                 <p className="text-blue-100/80 text-sm mb-3">
                   Understanding injury as a signal, not a surprise - rethinking how we approach movement monitoring.
                 </p>
@@ -117,7 +127,7 @@ export default function InvisibleForces() {
                 className="bg-white/10 backdrop-blur-xl border border-blue-400/20 rounded-3xl p-6 shadow-2xl shadow-blue-900/20 hover:bg-blue-900/20 transition-all duration-300 block"
               >
 
-                <h4 className="text-lg font-bold text-cyan-50 mb-2">What Injury Taught Me</h4>
+                <h4 className="text-lg text-cyan-50 mb-2">What Injury Taught Me</h4>
                 <p className="text-blue-100/80 text-sm mb-3">
                   A personal journey through injury, recovery, and the inspiration behind building Jeani.
                 </p>

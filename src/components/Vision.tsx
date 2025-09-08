@@ -3,12 +3,7 @@ import { motion } from 'framer-motion';
 
 const Vision = () => {
   return (
-    <section className="py-20 md:py-32 bg-gradient-to-br from-cyan-50 to-blue-50 px-6 relative overflow-hidden">
-      {/* Subtle background decoration */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-blue-600 to-blue-500 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-gradient-to-r from-blue-500 to-cyan-300 rounded-full blur-3xl"></div>
-      </div>
+    <section className="py-20 md:py-32 px-6 relative overflow-hidden">
 
       <div className="max-w-6xl mx-auto text-center relative z-10">
         <motion.h2
@@ -16,9 +11,9 @@ const Vision = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 md:mb-8 leading-tight"
+          className="text-3xl sm:text-4xl lg:text-5xl text-gray-900 mb-6 md:mb-8 leading-tight"
         >
-          <span className="bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent">
+          <span className="text-blue-500">
             Move better
           </span>
           <br />
@@ -44,32 +39,32 @@ const Vision = () => {
           className="grid md:grid-cols-3 gap-6 md:gap-8"
         >
           <div className="bg-white/60 backdrop-blur-sm p-6 md:p-8 rounded-2xl border border-blue-400/20 shadow-lg">
-            <div className="w-12 h-12 bg-gradient-to-r from-blue-700 to-blue-500 rounded-lg mb-4 md:mb-6 mx-auto flex items-center justify-center">
+            <div className="w-12 h-12 bg-blue-600 rounded-lg mb-4 md:mb-6 mx-auto flex items-center justify-center">
               <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
-            <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3">Career Longevity</h3>
+            <h3 className="text-lg md:text-xl text-gray-900 mb-2 md:mb-3">Career Longevity</h3>
             <p className="text-sm md:text-base text-gray-600">Extending athletic careers through predictive movement monitoring and movement optimization.</p>
           </div>
 
           <div className="bg-white/60 backdrop-blur-sm p-6 md:p-8 rounded-2xl border border-blue-400/20 shadow-lg">
-            <div className="w-12 h-12 bg-gradient-to-r from-blue-700 to-blue-500 rounded-lg mb-4 md:mb-6 mx-auto flex items-center justify-center">
+            <div className="w-12 h-12 bg-blue-600 rounded-lg mb-4 md:mb-6 mx-auto flex items-center justify-center">
               <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
               </svg>
             </div>
-            <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3">Lifelong Wellness</h3>
+            <h3 className="text-lg md:text-xl text-gray-900 mb-2 md:mb-3">Lifelong Wellness</h3>
             <p className="text-sm md:text-base text-gray-600">Building movement patterns that protect joint health and promote active aging beyond sport.</p>
           </div>
 
           <div className="bg-white/60 backdrop-blur-sm p-6 md:p-8 rounded-2xl border border-blue-400/20 shadow-lg">
-            <div className="w-12 h-12 bg-gradient-to-r from-blue-700 to-blue-500 rounded-lg mb-4 md:mb-6 mx-auto flex items-center justify-center">
+            <div className="w-12 h-12 bg-blue-600 rounded-lg mb-4 md:mb-6 mx-auto flex items-center justify-center">
               <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
               </svg>
             </div>
-            <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2 md:mb-3">Find Your Peak</h3>
+            <h3 className="text-lg md:text-xl text-gray-900 mb-2 md:mb-3">Find Your Peak</h3>
             <p className="text-sm md:text-base text-gray-600">Optimize for performance that matters to you, whether that&apos;s speed, endurance, power, or simply moving pain-free.</p>
           </div>
         </motion.div>

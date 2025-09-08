@@ -4,11 +4,21 @@ import Image from 'next/image';
 
 export default function Mission() {
   return (
-    <main>
+    <main 
+      className="mobile-bg-override"
+      style={{ 
+        backgroundImage: "url('/BG-2.png')", 
+        backgroundSize: 'cover', 
+        backgroundPosition: 'center', 
+        backgroundRepeat: 'no-repeat', 
+        backgroundAttachment: 'fixed',
+        minHeight: '100vh'
+      }}
+    >
       <Navigation />
       
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 px-6">
+      <section className="py-16 md:py-24 px-6 max-md:min-h-[100vh] max-md:flex max-md:flex-col max-md:justify-center">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <div className="relative inline-block">
@@ -16,7 +26,7 @@ export default function Mission() {
                     <div className="w-full max-w-[340px] md:max-w-none md:w-[700px] h-[180px] md:h-[240px] bg-blue-900/30 backdrop-blur-xl border border-blue-400/20 shadow-2xl shadow-blue-900/20 rounded-full animate-pulse" style={{animationDuration: '4s'}}></div>
                 </div>
                 <div className="relative z-10 px-6 md:px-8 py-6 md:py-10">
-                    <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-cyan-50 leading-tight">
+                    <h1 className="text-3xl md:text-5xl lg:text-6xl text-cyan-50 leading-tight">
                         Our <span className="bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">Mission</span>
                     </h1>
                     <p className="text-base md:text-xl text-blue-100/80 max-w-2xl mx-auto leading-relaxed mt-3 md:mt-4">
@@ -39,7 +49,7 @@ export default function Mission() {
                 />
               </div>
               <div className="text-center md:text-left">
-                <h3 className="text-3xl font-bold text-cyan-50 mb-4">Our Why</h3>
+                <h3 className="text-3xl text-cyan-50 mb-4">Our Why</h3>
                 <p className="text-lg text-blue-100/80 leading-relaxed">
                   As athletes we understand the risks of injury and their impact. We are bringing a new way of monitoring musculoskeletal health to market where athletes, coaches, and medical staff can make decisions and monitor injury risk on a more holistic basis. Joint specific monitoring, in real time.
                 </p>
@@ -58,7 +68,7 @@ export default function Mission() {
                 />
               </div>
               <div className="text-center md:text-left">
-                <h3 className="text-3xl font-bold text-cyan-50 mb-4">Make the Invisible Visible</h3>
+                <h3 className="text-3xl text-cyan-50 mb-4">Make the Invisible Visible</h3>
                 <p className="text-lg text-blue-100/80 leading-relaxed">
                   We believe athletes deserve to understand their bodies at the deepest level. By revealing the hidden forces and patterns that shape performance and injury risk, we empower informed decision-making about training, recovery, and long-term health.
                 </p>
@@ -77,7 +87,7 @@ export default function Mission() {
                 />
               </div>
               <div className="text-center md:text-left">
-                <h3 className="text-3xl font-bold text-cyan-50 mb-4">Extend Athletic Longevity</h3>
+                <h3 className="text-3xl text-cyan-50 mb-4">Extend Athletic Longevity</h3>
                 <p className="text-lg text-blue-100/80 leading-relaxed">
                   Every athlete&apos;s career should be limited by passion, not by preventable injuries. Our technology helps athletes train smarter, recover better, and compete longer by providing real-time insights into movement patterns and load management.
                 </p>

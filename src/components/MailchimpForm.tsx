@@ -67,7 +67,7 @@ const MailchimpForm = ({ isOpen, onClose }: MailchimpFormProps) => {
         {status !== 'submitted' ? (
           <>
             <div className="text-center mb-8">
-              <h2 className="text-3xl font-bold text-cyan-50 mb-2">Join the Movement</h2>
+              <h2 className="text-3xl text-cyan-50 mb-2">Join the Movement</h2>
               <p className="text-blue-100/80">
                 Stay updated on product drops, athlete stories, and early access.
               </p>
@@ -111,7 +111,7 @@ const MailchimpForm = ({ isOpen, onClose }: MailchimpFormProps) => {
               <button
                 type="submit"
                 disabled={status === 'submitting'}
-                className="w-full bg-gradient-to-r from-blue-700 to-blue-500 text-cyan-50 py-3 rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300 font-bold shadow-lg disabled:opacity-75 disabled:cursor-not-allowed"
+                className="w-full bg-gradient-to-r from-blue-700 to-blue-500 text-cyan-50 py-3 rounded-lg hover:from-blue-700 hover:to-blue-600 transition-all duration-300 shadow-lg disabled:opacity-75 disabled:cursor-not-allowed"
               >
                 {status === 'submitting' ? 'Subscribing...' : 'Subscribe'}
               </button>
@@ -126,7 +126,7 @@ const MailchimpForm = ({ isOpen, onClose }: MailchimpFormProps) => {
                 </svg>
               </div>
             </motion.div>
-            <h2 className="text-3xl font-bold text-cyan-50 mb-2">Thank You!</h2>
+            <h2 className="text-3xl text-cyan-50 mb-2">Thank You!</h2>
             <p className="text-blue-100/80">You&apos;re on the list. We&apos;ll be in touch soon.</p>
             <p className="text-sm text-blue-200/70 mt-4">
               We respect your privacy and will never share your email. 

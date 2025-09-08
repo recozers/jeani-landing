@@ -11,7 +11,7 @@ const ProductPreview = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-cyan-50 mb-4">See Jeani in Action</h2>
+          <h2 className="text-3xl sm:text-4xl text-cyan-50 mb-4">See Jeani in Action</h2>
           <p className="text-blue-100/80">Sophisticated technology designed for the way you move. See your data like never before.</p>
         </motion.div>
         
@@ -23,7 +23,7 @@ const ProductPreview = () => {
           className="mt-16 bg-white/5 backdrop-blur-sm p-12 rounded-2xl border border-blue-400/20"
         >
           <div className="aspect-video bg-blue-950 rounded-lg flex items-center justify-center">
-            <p className="text-blue-200/70 font-mono">[Product Demo Video / App Preview]</p>
+            <p className="text-blue-200/70">[Product Demo Video / App Preview]</p>
           </div>
         </motion.div>
       </div>

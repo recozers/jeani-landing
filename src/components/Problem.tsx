@@ -9,7 +9,7 @@ interface StatCardProps {
 
 const StatCard = ({ number, label, description }: StatCardProps) => (
   <div className="text-center">
-    <h2 className="text-3xl sm:text-4xl font-bold text-cyan-50 mb-4">{number}</h2>
+    <h2 className="text-3xl sm:text-4xl text-cyan-50 mb-4">{number}</h2>
     <p className="text-blue-100/80">{label}</p>
     <p className="text-blue-200/70 mt-2">{description}</p>
   </div>
@@ -17,10 +17,10 @@ const StatCard = ({ number, label, description }: StatCardProps) => (
 
 const Problem = () => {
   return (
-    <section id="problem" className="py-24 bg-gradient-to-br from-blue-950 to-blue-900 px-6">
+    <section id="problem" className="py-24 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-cyan-50 mb-4">The Hidden Cost of Sports Injuries</h2>
+          <h2 className="text-3xl sm:text-4xl text-cyan-50 mb-4">The Hidden Cost of Sports Injuries</h2>
           <p className="text-blue-100/80">Most injuries are preventable, but current methods fall short.</p>
         </div>
         
