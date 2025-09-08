@@ -3,7 +3,7 @@
 
 /* Target just the root without affecting body */
 :root {
-  background-color: transparent;
+  background-color: #0E1D63;
 }
 
 /* Custom color definitions for Tailwind v4 */

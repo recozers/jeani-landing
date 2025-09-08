@@ -11,6 +11,7 @@ const Navigation = () => {
     { title: 'About the Founders', href: '/founders' },
     { title: 'Invisible Forces', href: '/invisible-forces' },
     { title: 'Our Mission', href: '/mission' },
+    { title: 'Questions?', href: 'https://chat.jeanihealth.com', external: true },
   ];
 
   return (
@@ -66,13 +67,25 @@ const Navigation = () => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.1 }}
                   >
-                    <Link
-                      href={item.href}
-                      onClick={() => setIsMenuOpen(false)}
-                      className="block text-cyan-50 text-lg py-3 px-4 rounded-xl hover:bg-blue-900/40 transition-colors"
-                    >
-                      {item.title}
-                    </Link>
+                    {item.external ? (
+                      <a
+                        href={item.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={() => setIsMenuOpen(false)}
+                        className="block text-cyan-50 text-lg py-3 px-4 rounded-xl hover:bg-blue-900/40 transition-colors"
+                      >
+                        {item.title}
+                      </a>
+                    ) : (
+                      <Link
+                        href={item.href}
+                        onClick={() => setIsMenuOpen(false)}
+                        className="block text-cyan-50 text-lg py-3 px-4 rounded-xl hover:bg-blue-900/40 transition-colors"
+                      >
+                        {item.title}
+                      </Link>
+                    )}
                   </motion.div>
                 ))}
               </nav>
