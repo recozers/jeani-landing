@@ -1,16 +1,53 @@
 export default function Thorpe() {
   return (
-    <main
-      style={{
-        backgroundImage: "url('/BG-2.png')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed',
-        minHeight: '100vh'
-      }}
-    >
-      <section className="py-16 md:py-24 px-6">
+    <>
+      <style dangerouslySetInnerHTML={{__html: `
+        body {
+          background-image: none !important;
+        }
+
+        .thorpe-main {
+          position: relative;
+          min-height: 100vh;
+          background-image: url('/BG-2.png') !important;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+        }
+
+        .thorpe-main::before {
+          content: '';
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-image: url('/BG-2.png');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          z-index: -1;
+        }
+
+        @media (max-width: 768px) {
+          .thorpe-main {
+            background-image: none !important;
+          }
+          .thorpe-main::before {
+            background-image: url('/BG-thorpemob.png') !important;
+            transform: rotate(-90deg);
+            width: 100vh;
+            height: 100vw;
+            top: 50%;
+            left: 50%;
+            margin-left: -50vh;
+            margin-top: -50vw;
+          }
+        }
+      `}} />
+      <main className="thorpe-main">
+        <section className="py-16 md:py-24 px-6">
         <div className="max-w-4xl mx-auto">
           {/* Title */}
           <div className="text-center mb-12">
@@ -91,5 +128,6 @@ export default function Thorpe() {
         </div>
       </section>
     </main>
+    </>
   );
 }

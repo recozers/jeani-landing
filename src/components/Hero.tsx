@@ -46,13 +46,15 @@ const Hero = () => {
             transition={{ delay: 0.4, duration: 0.5 }}
             className="flex justify-center"
           >
-            <button 
-              onClick={() => setIsModalOpen(true)}
-              className="relative text-blue-950 px-6 py-3 sm:px-8 sm:py-4 rounded-full hover:bg-blue-900/20 transition-all duration-300 overflow-hidden"
+            <a
+              href="https://buy.stripe.com/28E28k3z357j1DdcwbdEs02"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative text-blue-950 px-12 py-6 sm:px-16 sm:py-8 text-2xl sm:text-3xl rounded-full hover:bg-blue-900/20 transition-all duration-300 overflow-hidden block"
             >
               <div className="absolute inset-0 bg-cyan-100/30 backdrop-blur-xl border border-cyan-100/40 shadow-2xl shadow-blue-900/20 rounded-full animate-pulse" style={{animationDuration: '4s'}}></div>
-              <span className="relative z-10">Join the movement</span>
-            </button>
+              <span className="relative z-10">Preorder now</span>
+            </a>
           </motion.div>
         </div>
       </motion.section>
