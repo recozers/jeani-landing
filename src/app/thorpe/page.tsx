@@ -33,16 +33,10 @@ export default function Thorpe() {
         @media (max-width: 768px) {
           .thorpe-main {
             background-image: none !important;
+            background-color: #0E1D63 !important;
           }
           .thorpe-main::before {
-            background-image: url('/BG-thorpemob.png') !important;
-            transform: rotate(-90deg);
-            width: 100vh;
-            height: 100vw;
-            top: 50%;
-            left: 50%;
-            margin-left: -50vh;
-            margin-top: -50vw;
+            display: none;
           }
         }
       `}} />
