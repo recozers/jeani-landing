@@ -31,6 +31,8 @@ const Hero = () => {
               width={208}
               height={208}
               className="h-28 sm:h-36 md:h-44 lg:h-52 w-auto relative z-10"
+              priority
+              unoptimized
             />
           </motion.div>
           
