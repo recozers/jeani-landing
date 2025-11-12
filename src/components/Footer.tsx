@@ -12,9 +12,9 @@ const Footer = () => {
           <p className="text-lg text-cyan-50 mb-2 md:mb-4">Jeani</p>
           <p className="mb-6 md:mb-8 text-sm md:text-base">The future of movement starts here.</p>
           <div className="flex justify-center space-x-6 md:space-x-8 text-sm">
-            <a href="#" className="hover:text-cyan-100 transition-colors">Privacy</a>
-            <a href="#" className="hover:text-cyan-100 transition-colors">Terms</a>
-            <button 
+            <a href="/privacy" className="hover:text-cyan-100 transition-colors">Privacy</a>
+            <a href="/terms" className="hover:text-cyan-100 transition-colors">Terms</a>
+            <button
               onClick={() => setIsModalOpen(true)}
               className="hover:text-cyan-100 transition-colors"
             >
