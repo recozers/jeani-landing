@@ -46,9 +46,9 @@ export default function PrivacyPolicy() {
               <div className="mb-8">
                 <h2 className="text-2xl md:text-3xl text-cyan-50 mb-4">Summary</h2>
                 <ul className="text-blue-100/90 space-y-2 list-disc pl-5">
-                  <li>We collect account info, device usage, and movement/sensor data ("Movement Data") to run and improve Jeani.</li>
+                  <li>We collect account info, device usage, and movement/sensor data (&quot;Movement Data&quot;) to run and improve Jeani.</li>
                   <li>We apply strong confidentiality and security measures and never sell your personal data.</li>
-                  <li>You control Organization/team sharing; we'll show you exactly what's shared before you accept.</li>
+                  <li>You control Organization/team sharing; we&apos;ll show you exactly what&apos;s shared before you accept.</li>
                   <li>You can request data export or deletion as described below.</li>
                 </ul>
               </div>
@@ -56,7 +56,7 @@ export default function PrivacyPolicy() {
               <div className="space-y-8 text-blue-100/90">
                 <section>
                   <h2 className="text-2xl md:text-3xl text-cyan-50 mb-3">1. Who we are & scope</h2>
-                  <p>This Privacy Policy describes how Jeani Health LLC, a North Carolina limited liability company, 1702 Woodburn Rd, Durham, NC 27705 ("Jeani," "we," "us"), processes personal data when you use our mobile app, firmware, websites, dashboards, and related services (the "Service").</p>
+                  <p>This Privacy Policy describes how Jeani Health LLC, a North Carolina limited liability company, 1702 Woodburn Rd, Durham, NC 27705 (&quot;Jeani,&quot; &quot;we,&quot; &quot;us&quot;), processes personal data when you use our mobile app, firmware, websites, dashboards, and related services (the &quot;Service&quot;).</p>
                 </section>
 
                 <section>
@@ -69,7 +69,7 @@ export default function PrivacyPolicy() {
                   <ul className="space-y-2 list-disc pl-5">
                     <li>Account & contact data: name, email, profile details, settings.</li>
                     <li>Device & usage data: device identifiers, OS/app version, events, diagnostics, crash logs.</li>
-                    <li>Movement & activity data ("Movement Data"): IMU/sensor signals, derived metrics, training context, symptoms you log.</li>
+                    <li>Movement &amp; activity data (&quot;Movement Data&quot;): IMU/sensor signals, derived metrics, training context, symptoms you log.</li>
                     <li>Context & relationships: Organizations/teams you join, your role, coaches/admins associated.</li>
                     <li>Support & feedback: help tickets, surveys, beta feedback, in-app messages.</li>
                     <li>Optional communications: your marketing preferences.</li>
@@ -99,7 +99,7 @@ export default function PrivacyPolicy() {
 
                 <section>
                   <h2 className="text-2xl md:text-3xl text-cyan-50 mb-3">6. Legal bases & consent</h2>
-                  <p>Where required, we rely on your consent to process Sensitive Data (Movement Data and any health-related information you provide). We may also rely on performance of a contract, legitimate interests (e.g., security, improvement), and legal obligations. Jeani is generally not a HIPAA "covered entity." We do not sign BAAs unless separately agreed in writing with an Organization.</p>
+                  <p>Where required, we rely on your consent to process Sensitive Data (Movement Data and any health-related information you provide). We may also rely on performance of a contract, legitimate interests (e.g., security, improvement), and legal obligations. Jeani is generally not a HIPAA &quot;covered entity.&quot; We do not sign BAAs unless separately agreed in writing with an Organization.</p>
                 </section>
 
                 <section>

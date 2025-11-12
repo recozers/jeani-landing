@@ -56,12 +56,12 @@ export default function TermsOfService() {
               <div className="space-y-8 text-blue-100/90">
                 <section>
                   <h2 className="text-2xl md:text-3xl text-cyan-50 mb-3">1. Who we are</h2>
-                  <p>These Terms are between you and Jeani Health LLC, a North Carolina limited liability company, 1702 Woodburn Rd, Durham, NC 27705 ("Jeani," "we," "us"). They govern your use of the Jeani mobile app, firmware, websites, dashboards, APIs, and related services (the "Service").</p>
+                  <p>These Terms are between you and Jeani Health LLC, a North Carolina limited liability company, 1702 Woodburn Rd, Durham, NC 27705 (&quot;Jeani,&quot; &quot;we,&quot; &quot;us&quot;). They govern your use of the Jeani mobile app, firmware, websites, dashboards, APIs, and related services (the &quot;Service&quot;).</p>
                 </section>
 
                 <section>
                   <h2 className="text-2xl md:text-3xl text-cyan-50 mb-3">2. Eligibility & account</h2>
-                  <p>You must be 16+ to use the Service. You are responsible for your account credentials and for the accuracy of information you provide. If you access the Service through a school, team, club, or employer ("Organization"), additional Organization terms may apply.</p>
+                  <p>You must be 16+ to use the Service. You are responsible for your account credentials and for the accuracy of information you provide. If you access the Service through a school, team, club, or employer (&quot;Organization&quot;), additional Organization terms may apply.</p>
                 </section>
 
                 <section>
@@ -93,7 +93,7 @@ export default function TermsOfService() {
 
                 <section>
                   <h2 className="text-2xl md:text-3xl text-cyan-50 mb-3">7. Acceptable use</h2>
-                  <p>You agree not to: (a) misuse or interfere with the Service; (b) reverse engineer, copy, or resell except as allowed; (c) upload unlawful or infringing content; (d) attempt to access others' data; or (e) use the Service to profile or discriminate against others.</p>
+                  <p>You agree not to: (a) misuse or interfere with the Service; (b) reverse engineer, copy, or resell except as allowed; (c) upload unlawful or infringing content; (d) attempt to access others&apos; data; or (e) use the Service to profile or discriminate against others.</p>
                 </section>
 
                 <section>
@@ -108,7 +108,7 @@ export default function TermsOfService() {
 
                 <section>
                   <h2 className="text-2xl md:text-3xl text-cyan-50 mb-3">10. Beta features</h2>
-                  <p>You may receive early/beta features. They are provided "as is" and may be modified or discontinued. We may collect diagnostics and feedback to improve them.</p>
+                  <p>You may receive early/beta features. They are provided &quot;as is&quot; and may be modified or discontinued. We may collect diagnostics and feedback to improve them.</p>
                 </section>
 
                 <section>
@@ -123,7 +123,7 @@ export default function TermsOfService() {
 
                 <section>
                   <h2 className="text-2xl md:text-3xl text-cyan-50 mb-3">13. Disclaimers</h2>
-                  <p className="uppercase">TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE." JEANI DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND ACCURACY OF ANY INSIGHTS OR METRICS. JEANI DOES NOT PROVIDE MEDICAL ADVICE AND THE SERVICE IS NOT A SUBSTITUTE FOR A MEDICAL PROFESSIONAL OR EMERGENCY SERVICES.</p>
+                  <p className="uppercase">TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE SERVICE IS PROVIDED &quot;AS IS&quot; AND &quot;AS AVAILABLE.&quot; JEANI DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND ACCURACY OF ANY INSIGHTS OR METRICS. JEANI DOES NOT PROVIDE MEDICAL ADVICE AND THE SERVICE IS NOT A SUBSTITUTE FOR A MEDICAL PROFESSIONAL OR EMERGENCY SERVICES.</p>
                 </section>
 
                 <section>

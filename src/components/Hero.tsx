@@ -1,6 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import Image from 'next/image';
 import MailchimpForm from './MailchimpForm';
 
 const Hero = () => {
@@ -23,10 +24,12 @@ const Hero = () => {
             transition={{ delay: 0.2, duration: 0.5 }}
             className="mb-8 relative w-full flex justify-center"
           >
-            
-            <img 
-              src="/Jeani_png.png" 
-              alt="Jeani Logo" 
+
+            <Image
+              src="/Jeani_png.png"
+              alt="Jeani Logo"
+              width={208}
+              height={208}
               className="h-28 sm:h-36 md:h-44 lg:h-52 w-auto relative z-10"
             />
           </motion.div>
